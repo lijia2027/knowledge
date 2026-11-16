@@ -6,7 +6,10 @@ import { head, nav, search, sidebar } from './configs'
 
 const basePath = basename(process.env.APP_BASE_PATH || '')
 const base = basePath ? `/${basePath}/` : '/'
-const siteUrl = process.env.SITE_URL
+const siteUrl = process.env.SITE_URL?.replace(
+  /^http:\/\/lijia2027\.com\//,
+  'https://lijia2027.com/',
+)
 
 export default defineConfig({
   outDir: '../dist',
