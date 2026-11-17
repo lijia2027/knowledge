@@ -4,7 +4,7 @@ export const developmentOverview = { text: '开发总览', link: '/development/'
 
 export const developmentGroups = [
   {
-    text: 'Go（Golang）',
+    text: 'Golang',
     items: [
       { text: 'Go 总览与选型', link: '/development/go/' },
       { text: '网络与服务通信', link: '/development/go/networking' },
